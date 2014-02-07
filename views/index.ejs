@@ -1,0 +1,59 @@
+<!--
+    buttons and inputs
+    #usernameInput
+    #submitUser
+
+    images
+    #rock
+    #paper
+    #scissors
+
+    rows
+    #titleRow
+    #vsRow
+    #usernameRow
+    #actionRow
+    #usernameStatus
+
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+
+  <div class="container">
+
+      <div id="titleRow" class="row">
+          <h1>Rock. Paper. Scissors. Pick wisely!</h1>
+      </div>
+
+      <div id="vsRow" class="row hidden">
+          <h1>User <span id="nameOfYou">A</span> vs User <span id="nameOfOpponent">B</span></h1>
+      </div>
+
+      <div id="findGame" class="row hidden">
+          <button id="findGameButton">Click to find a game!</button>
+      </div>
+
+      <div id="usernameRow" class="row row-username">
+          <p>Give yourself a name:</p>
+          <input id="usernameInput" type="text">
+          <button id="submitUser">Enter name</button>
+          <p id="usernameStatus"></p>
+      </div>
+
+      <div id="actionRow" class="row row-options hidden">
+        <img id="rock" src="/images/rock.png">
+        <img id="paper" src="/images/paper.png">
+        <img id="scissors" src="/images/scissors.png">
+      </div>
+
+  </div>
+
+    <script type="text/javascript"  src="/javascripts/jquery.js"></script>
+    <script  type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript"  src="/javascripts/website.js"></script>
+</body>
+</html>
