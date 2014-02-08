@@ -43,9 +43,9 @@ img{
 }
 
 img:hover{
-    border: 1px solid red;
+    border: 1px solid yellow;
     cursor: pointer;
-    background: red;
+    background: yellow;
 }
 
 /*
@@ -54,4 +54,9 @@ img:hover{
 
 .hidden{
     display: none;
+}
+
+.selected{
+    border: 1px solid red;
+    background: red;
 }
