@@ -111,7 +111,7 @@ function handleWinLoss(socket){
 }
 
 function handleFinish(socket){
-    socket.on('finish', function (obj){
+    socket.on('finish', function (){
         console.log("Finished, cleaned up!");
 
         // Cleans up rows
