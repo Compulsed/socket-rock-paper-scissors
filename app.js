@@ -38,5 +38,5 @@ var server = http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
 });
 
-var rpcServer = require('./lib/rpc-server');
+var rpcServer = require('./lib/rps-server'); // Attaches socket.io
 rpcServer.listen(server);
